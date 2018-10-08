@@ -81,7 +81,7 @@ register_deactivation_hook( __FILE__, array ( $wup_main, 'deactivate'));
 
 // Menu Registration code
 	function wup_menu() {
-	add_menu_page( 'Plugin Options', 'Weather Plugin', 'manage_options', 'my-unique-identifier', 'wup_plugin_options' );
+	add_menu_page( 'Plugin Options', 'Weather Plugin', 'manage_options', 'wup_Weather_update_plugin', 'wup_plugin_options' );
 	}
 
 	function wup_plugin_options() {
@@ -110,6 +110,3 @@ jQuery(document).ready(function(){
 }
 $shortcd = cs_get_option( 'shortcode_name' );
 add_shortcode( 'wup_weather', 'wup_Weather_plugin');
-echo '<div id=wrap>';
-
-echo '</div>';
