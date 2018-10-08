@@ -1,7 +1,7 @@
 # Weather-Plugin
 
-![screenshot](Screenshot3.png)
+![screenshot](screenshot3.png)
 
-![screenshot](Screenshot2.png)
+![screenshot](Shreenshot2.png)
 
-![screenshot](Screenshot.png)
+![screenshot](screenshot.png)
