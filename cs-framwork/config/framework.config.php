@@ -4,6 +4,9 @@
 // FRAMEWORK SETTINGS
 // -----------------------------------------------------------------------------------------------
 // ===============================================================================================
+// include '../../js/custom.js';
+// wp_enqueue_script( 'script', '/wp-content/plugins/WeatherPlugin/js/custom.js');
+
 $settings           = array(
   'menu_title'      => 'Framework',
   'menu_type'       => 'menu', // menu, submenu, options, theme, etc.
@@ -47,12 +50,14 @@ $options[]              = array(
       'id'      => 'shortcode_name',
       'type'    => 'text',
       'title'   => 'Unique ID',
+      'class'   => 'Unique_id'
     ),
     // end: a field
 
   // begin: a field
     array(
       'id'      => 'shortcode_123',
+      'class'   => 'shortcode',
       'type'    => 'text',
       'title'   => 'Shortcode',
       'desc'    => 'Use This Short code to see Weather',
@@ -63,5 +68,5 @@ $options[]              = array(
   ),
 );
 
-
 CSFramework::instance( $settings, $options );
+?>

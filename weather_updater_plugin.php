@@ -109,4 +109,4 @@ jQuery(document).ready(function(){
 
 }
 $shortcd = cs_get_option( 'shortcode_name' );
-add_shortcode( 'wup_weather', 'wup_Weather_plugin');
+add_shortcode( $shortcd, 'wup_Weather_plugin');
