@@ -6,7 +6,8 @@
 // ===============================================================================================
 // include '../../js/custom.js';
 // wp_enqueue_script( 'script', '/wp-content/plugins/WeatherPlugin/js/custom.js');
-
+wp_enqueue_script( 'customJs', plugin_dir_url(__FILE__) . 'js/custom.js', array('jquery'));
+// wp_register_script('customJs', plugin_dir_url(__FILE__) . '../../js/custom.js', array('jquery'));
 $settings           = array(
   'menu_title'      => 'Framework',
   'menu_type'       => 'menu', // menu, submenu, options, theme, etc.
@@ -67,6 +68,7 @@ $options[]              = array(
     // end: a field
   ),
 );
+
 
 CSFramework::instance( $settings, $options );
 ?>
